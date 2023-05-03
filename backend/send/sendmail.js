@@ -9,7 +9,7 @@ const Sendmail = async (req, res) => {
 
   const newEmail = new Email({
     to: req.body.email,
-    from: "abdullah.baig1998@gmail.com",
+    from: "abc123@gmail.com",
     subject: req.body.subject,
     body: req.body.message,
   });
@@ -30,8 +30,8 @@ const Sendmail = async (req, res) => {
       port: 465,
       secure: true,
       auth: {
-        user: "abdullah.baig1998@gmail.com",
-        pass: "kpnrdvjixveeutbp",
+        user: "abc@gmail.com",
+        pass: "786786786",
       },
     });
     const mailOptions = {
